@@ -105,8 +105,8 @@ char* ant[] = {
 LiquidCrystal lcd(A0, A1, 7, 6, 5, 4);     // rev. 0.3
 #if defined(EthModule)
   byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEE};
-  IPAddress ip(192, 168, 1, 220);         // IP
-  IPAddress gateway(192, 168, 1, 200);    // GATE
+  IPAddress ip(192, 168, 178, 240);         // IP
+  IPAddress gateway(192, 168, 178, 1);    // GATE
   IPAddress subnet(255, 255, 255, 0);     // MASK
   IPAddress myDns(8, 8, 8, 8);            // DNS (google pub)
   EthernetServer server(80);              // server PORT
